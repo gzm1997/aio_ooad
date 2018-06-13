@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<script src="http://malsup.github.io/jquery.form.js" type="text/javascript"></script>
+	<script src="//oss.maxcdn.com/jquery.form/3.50/jquery.form.min.js"></script>
+	<script src="http://malsup.github.io/min/jquery.form.min.js"></script>
+</head>
+<body>
+	<button id="submit">click</button>
+	<script type="text/javascript">
+		$.post("https://127.0.0.1:5000/api/order", {
+			table: 1,
+			list: [{'id': '1', 'name': 'pork', 'count': 1, 'price': 20}, {'id': '2', 'name': 'fish', 'count': 1, 'price': 23}]
+		}, function(data) {
+			alert(data)
+		})
+	</script>
+</body>
+</html>
