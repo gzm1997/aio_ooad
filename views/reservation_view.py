@@ -2,6 +2,7 @@ from aiohttp import web
 import pathlib
 # import yaml
 import sys
+from aiojobs.aiohttp import atomic
 # import ast
 
 BASE_DIR = pathlib.Path(__file__).parent.parent
@@ -90,6 +91,7 @@ interface IOrderItem {
         "total": 34
 """
 
+@atomic
 async def create_order(request):
     engine = await aio_engine.init_engine()
     data = await request.json()

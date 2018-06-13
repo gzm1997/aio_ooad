@@ -1,6 +1,7 @@
 import pathlib
 import sys
 import aiohttp_cors
+from aiojobs.aiohttp import setup
 
 
 BASE_DIR = pathlib.Path(__file__).parent.parent
@@ -28,6 +29,7 @@ def setup_routes(app):
     })
     for route in list(app.router.routes()):
         cors.add(route)
+    setup(app)
     return app
 
     # redis = await aioredis.create_pool(('localhost', 6379))
