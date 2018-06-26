@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7776522-28c2-4c0b-8dec-5356f9db8ca7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiohttp_polls/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiohttp_polls/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/reservation.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/reservation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_r.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_r.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/keeper_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/keeper_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiohttp_polls/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/aiohttp_polls/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +67,8 @@
             <file leaf-file-name="routes.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/aiohttp_polls/routes.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="404">
-                    <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+                  <state relative-caret-position="286">
+                    <caret line="22" selection-start-line="22" selection-end-line="22" />
                     <folding>
                       <element signature="e#0#14#0" expanded="true" />
                     </folding>
@@ -103,11 +95,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="keeper_view.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aiohttp_polls/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keeper_view.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/keeper_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="158" column="26" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="26" />
+            <state relative-caret-position="1330">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -118,7 +122,7 @@
       <file leaf-file-name="test_r.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_r.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
+            <state relative-caret-position="703">
               <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -174,7 +178,6 @@
         <option value="$PROJECT_DIR$/test_main.py" />
         <option value="$PROJECT_DIR$/aiohttp_polls/cookies_encrypt.py" />
         <option value="$PROJECT_DIR$/aiohttp_polls/cookies_redis.py" />
-        <option value="$PROJECT_DIR$/aiohttp_polls/main.py" />
         <option value="$PROJECT_DIR$/views/manager_view.py" />
         <option value="$PROJECT_DIR$/views/reservation_view.py" />
         <option value="$PROJECT_DIR$/test_r.py" />
@@ -183,6 +186,7 @@
         <option value="$PROJECT_DIR$/models/sales.py" />
         <option value="$PROJECT_DIR$/views/keeper_view.py" />
         <option value="$PROJECT_DIR$/aiohttp_polls/routes.py" />
+        <option value="$PROJECT_DIR$/aiohttp_polls/main.py" />
       </list>
     </option>
   </component>
@@ -577,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aiohttp_polls/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_form/post_order.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -613,16 +607,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/manager_view.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_r.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_keeper.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -688,22 +672,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/keeper_view.py">
+    <entry file="file://$PROJECT_DIR$/test_r.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="158" column="26" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="26" />
+        <state relative-caret-position="703">
+          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aiohttp_polls/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="286">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/keeper_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aiohttp_polls/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
