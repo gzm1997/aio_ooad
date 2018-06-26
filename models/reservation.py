@@ -57,3 +57,45 @@ async def select(engine, id = None, reserve_datetime = None, pay_datetime = None
         records = await cursor.fetchall()
         await trans.commit()
         return [dict(r) for r in records]
+
+
+async def select_count_by_month(engine, year, mon):
+    async with engine.acquire() as conn:
+        trans = await conn.begin()
+        cursor = await conn.execute(reservation.select().where(sa.extract('year', reservation.c.reserve_datetime) == year).where(sa.extract("month", reservation.c.reserve_datetime) == mon))
+        records = await cursor.fetchall()
+        await trans.commit()
+        return records
+
+
+
+
+async def total_static_info(engine):
+    async with engine.acquire() as conn:
+        trans = await conn.begin()
+        cursor = await conn.execute(reservation.select())
+        records = await cursor.fetchall()
+        await trans.commit()
+        print("record", records)
+        records = [dict(r) for r in records]
+        total_turnover = 0
+        total_reservation = 0
+        total_payment = 0
+        pay_count = 0
+        for r in records:
+            total_turnover += r["total"]
+            total_reservation += 1
+            if r["isPaid"]:
+                total_payment += r["total"]
+                pay_count += 1
+        reservation_payment_ratio = float(pay_count) / float(total_reservation)
+        return {
+            "total_turnover": total_turnover,
+            "total_reservation": total_reservation,
+            "total_payment": total_payment,
+            "reservation_payment_ratio": reservation_payment_ratio
+        }
+
+
+
+

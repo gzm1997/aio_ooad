@@ -36,3 +36,54 @@ async def sales_permonth(engine, id = None):
             if food_name_result in food_list.keys():
                 count += food_list[food_name_result]
         return count
+
+
+async def reservation_quantity_piedata(engine):
+    async with engine.acquire() as conn:
+        trans = await conn.begin()
+        cursor = await conn.execute(food.food.select())
+        food_name = await cursor.fetchall()
+        cursor = await conn.execute(reservation.reservation.select())
+        food_lists = await cursor.fetchall()
+        food_name = [dict(n)["name"] for n in food_name]
+        food_lists = [dict(f)["food_list"] for f in food_lists]
+        # print("food name", food_name, "food lists", food_lists)
+        await trans.commit()
+        r = []
+        for fn in food_name:
+            t = {
+                "x": fn
+            }
+            count = 0
+            for l in food_lists:
+                if fn in l.keys():
+                    count += l[fn]
+            t["y"] = count
+            r.append(t)
+        return r
+
+
+async def turnover_piedata(engine):
+    async with engine.acquire() as conn:
+        trans = await conn.begin()
+        cursor = await conn.execute(food.food.select())
+        food_name = await cursor.fetchall()
+        cursor = await conn.execute(reservation.reservation.select())
+        food_lists = await cursor.fetchall()
+        foods = [dict(n) for n in food_name]
+        food_lists = [dict(f)["food_list"] for f in food_lists]
+        # print("food name", food_name, "food lists", food_lists)
+        await trans.commit()
+        r = []
+        for f in foods:
+            t = {
+                "x": f["name"]
+            }
+            turnover = 0
+            for l in food_lists:
+                if f["name"] in l.keys():
+                    turnover += l[f["name"]] * f["price"]
+            t["y"] = turnover
+            r.append(t)
+        return r
+

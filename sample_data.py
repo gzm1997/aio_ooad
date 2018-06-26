@@ -11,7 +11,7 @@ async def insert_sample_data():
     tag_object = {"description": "this is a new tag", "picture": "this is a tag picture"}
     food_object = {
         "name": "pork",
-        "picture": "https://demo.pork.png",
+        "picture": "https://i8.meishichina.com/attachment/recipe/2014/07/18/20140718114832312460803.jpg?x-oss-process=style/p800",
         "price": 53,
         "description": "this is a pork",
         "rating": "0.8",
@@ -20,7 +20,7 @@ async def insert_sample_data():
     }
     food_object1 = {
         "name": "fish",
-        "picture": "https://demo.fish.png",
+        "picture": "https://www.jucanw.com/UploadFiles/2013-05/admin/2013051715282196795.jpg",
         "price": 32,
         "description": "this is a fish",
         "rating": "0.4",
